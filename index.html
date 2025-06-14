@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TO DO List</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.todo-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.input-section button {
+  background-color: #007BFF;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 8px;
+  cursor: not-allowed; /* just for UI; JS needed to enable it */
+}
+
+.task-list {
+  list-style: none;
+}
+
+.task-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  color: #444;
+}
+
+.task-list li:last-child {
+  border-bottom: none;
+}</style>
+</head>
+<body>
+  <div class="todo-container">
+    <h1>My TO DO List 📝</h1>
+
+    <div class="input-section">
+      <input type="text" placeholder="Enter your task..." />
+      <button>Add Task</button>
+    </div>
+
+    <ul class="task-list">
+      <li>✔ Learn HTML</li>
+      <li>✔ Practice CSS</li>
+      <li>🔲 Build To-Do Website</li>
+    </ul>
+  </div>
+</body>
+</html>
